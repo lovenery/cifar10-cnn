@@ -87,7 +87,8 @@ def training():
 
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy', top_5_accuracy])
     # train_history = model.fit(x=x_train_normalize, y=y_train_onehot, validation_split=0.2, epochs=50, batch_size=32, verbose=2)
-    train_history = model.fit(x=x_train_normalize, y=y_train_onehot, epochs=50, batch_size=32, verbose=2, validation_data=(x_test_normalize, y_test_onehot))
+    epochs = 20
+    train_history = model.fit(x=x_train_normalize, y=y_train_onehot, epochs=epochs, batch_size=32, verbose=2, validation_data=(x_test_normalize, y_test_onehot))
     show_train_history(train_history)
     model.save('model.h5')
 
