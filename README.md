@@ -1,5 +1,11 @@
 # DTV
 
+## Build
+
+```bash
+pip install keras tensorflow matplotlib h5py Pillow
+```
+
 ## CIFAR-10
 
 - https://www.cs.toronto.edu/~kriz/cifar.html
