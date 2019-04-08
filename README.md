@@ -1,4 +1,4 @@
-# DTV
+# cifar10-cnn
 
 ## Build
 
